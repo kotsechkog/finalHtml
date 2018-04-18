@@ -2,7 +2,10 @@
 @import "partials/fonts";
 @import "partials/variable";
 @import "partials/normalize";
-
+@import "partials/start";
+@import "partials/offer";
+@import "partials/features";
+@import "partials/title";
 *,
 *:before,
 *:after {
@@ -11,6 +14,26 @@
 
 .wrapper {
 width: 100%;
+}
+
+.top-section-icon {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 40px;
+	height: 40px;
+	background: $main_color;
+	border-radius: 3px;
+	transform: translate(-50%, -50%) rotate(45deg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	span {
+		display: block;
+		transform: rotate(135deg);
+		color: #fff;
+
+	}
 }
 
 .container {
@@ -30,128 +53,18 @@ width: 100%;
 		justify-content: space-between;
 	}
 }
-.title {
-	margin-bottom: 20px;
-	display: flex;
-	width: 100%;
-	align-items: center;
-	&__line {
-		position: relative;
-		width: 100%;
-		max-width: 50%;
-		height: 6px;
-		
-		&:before,
-		&:after {
-			position: absolute;
-			content: '';
-			display: block;
-			width: 100%;
-			height: 1px;
-			background: #fff;
-		}
-		&:before {
-			top: 0;
-		}
-		&:after {
-			top: 6px;
-		}
-		&_grad-l {
-			&:before,
-			&:after {
-			     background: linear-gradient(to right, rgba(222,222,222,0) 0%,rgba(222,222,222,1) 50%,rgba(222,222,222,1) 100%);
-			}
-		}
-		&_grad-r {
-			&:before,
-			&:after {
-			     background: linear-gradient(to left, rgba(222,222,222,0) 0%,rgba(222,222,222,1) 50%,rgba(222,222,222,1) 100%);
-			}
-		}
-	}
-	&__rhombus_l,
-	&__rhombus_r {
-		padding: 0 10px;
-		img {
-			display: block;
-		}
-	}
-	&__content {
-		padding: 0 10px;
-		font: 26px 'ralewayextrabold' sans-serif;
-		text-transform: uppercase;
-		white-space: nowrap;
-		.first {
-			color: $main_color;
-			&_offer {
-				color: #383838;
-			}
-		}
-		.second {
-			color: #383838;
-			&_offer {
-				color: $main_color;
-			}
-		}
-	}
-}
-
-.start {
-	background: #8a8a8a;
-	text-transform: uppercase;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	&__header {
-		p {
-			font: 18px 'ralewaymedium' sans-serif;	
-			text-align: center;	
-			margin-bottom: 10px;	
-		}
-		h1 {
-			font: 64px 'ralewayextrabold' sans-serif;
-			color: #383838;
-			line-height: 47px;
-			margin: 0 0 20px 0;
-		}
-		.slogan {
-			padding: 0 10px;
-			margin-bottom: 50px;
-			color: #fff;
-			text-transform: uppercase;
-			font: 17px 'ralewaymedium' sans-serif;
-			display: block;
-			height: 40px;
-			line-height: 40px;
-			max-width: 635px;
-			background: #333;
-			border-radius: 5px;
-			a {
-				font: 17px 'ralewayextrabold' sans-serif;
-				text-transform: none;
-				color: #fff;
-				text-decoration: none;
-				cursor: pointer;
-				span {
-					color: #03a397;
-				}
-			}
-
-		}
-	}
 
 
-	&__scroll {
 
-	}
-
-}
 
 .header {
 	border-bottom: 2px solid #dedede;
 	padding: 30px 0;
 	margin-bottom: 80px;
 	position: sticky;
+	top: 0;
+	background: #fff;
+	z-index: 10;
 	
 	&__logo {
 		img {
@@ -189,84 +102,3 @@ width: 100%;
 
 }
 
-.offer	{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	.description {
-		width: 100%;
-		font: 16px 'ralewaymedium' sans-serif;
-		text-transform: uppercase;
-		text-align: center;
-		color: #8a8a8a;
-		margin-bottom: 50px;
-	}
-
-	.content {
-		display: flex;
-		width: 100%;
-		justify-content: space-between;
-		margin:  0 -0.5% 110px 0;
-
-		&__item {
-			width: 33%;
-			margin: 0 0.5%; 
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			transition: all 0.3s ease;
-			&:hover {
-				transform: scale(1.1);
-				.icon {
-					background: $main_color;
-				}
-
-				.link {
-					a{
-						background: $main_color;
-						border: 1px solid $main_color;
-						color: #fff;
-					}
-				}
-			}
-			.icon {
-				width: 100px;
-				height: 100px;
-				border-radius: 100%;
-				background: #383838;
-				margin-bottom: 30px;
-			}
-
-			h3 {
-				font: 14px 'ralewayextrabold' sans-serif;
-				text-transform: uppercase;
-				margin-bottom: 20px;
-			}
-			.text {
-				font: 14px/24px 'ralewaymedium' sans-serif;
-				margin-bottom: 20px;
-				text-align: center;
-			}
-			.link {
-				a {
-					text-decoration: none;
-					text-transform: uppercase;
-					font: 10px 'ralewayextrabold' sans-serif;
-					height: 30px;
-					line-height: 6px;
-					padding: 12px;
-					border: 1px solid #dedede;
-					border-radius: 3px;
-					color: #8a8a8a;
-					transition: opacity 0.3s linear;
-					&:hover {
-						opacity: 0.7;
-					}
-				}
-
-			} 
-
-
-		} 
-	}
-}
