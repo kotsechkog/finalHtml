@@ -58,7 +58,13 @@
 				color: #383838;
 			}
 			&_features {
-				color: $main_color;
+				color: #e4e4e4;
+			}
+			&_skills {
+				color: #e4e4e4;
+			}
+			&_works {
+				color: #383838;
 			}
 		}
 		.second {
@@ -67,7 +73,13 @@
 				color: $main_color;
 			}
 			&_features {
-				color: #e4e4e4;
+				color: $main_color;
+			}
+			&_skills {
+				color: $main_color;
+			}
+			&_works {
+				color: $main_color;
 			}
 		}
 	}

@@ -1,0 +1,49 @@
+.skills {
+	background: #383838;
+	padding-top: 77px;
+	position: relative;
+	&__content {
+		display: flex;
+		.item {
+			width: 16.6%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			margin-bottom: 70px;
+			&__percents {
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 120px;
+				height: 120px;
+				margin-bottom: 20px;
+				.base,
+				.percents {
+					display: block;
+					position: absolute;
+					top: 0;
+				}
+				.percents {
+					z-index: 1;
+				}
+				span {
+					display: inline-block;
+					font: 21px 'ralewayextrabold' sans-serif;
+					color: #e4e4e4;
+					span {
+						font-size: 14px;
+					}
+				}
+			
+			}
+			&__description {
+				text-transform: uppercase;
+				font: 14px 'ralewayextrabold' sans-serif;
+				color: #8a8a8a;
+				text-align: center;
+			}
+		}
+	}
+}
