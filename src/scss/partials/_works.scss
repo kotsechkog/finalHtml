@@ -1,3 +1,34 @@
 .works {
 	padding-top: 77px;
+
+
+	.swiper-container {
+      width: 100%;
+      height: 200px;
+      margin-bottom: 50px;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;    
+      display: flex;      
+      justify-content: center;     
+      align-items: center;
+    }
+
+    .all_works {
+    	display: block;
+		width: 100%;
+		height: 40px;
+		border-radius: 4px;
+		background: $main_color;
+		font: 13px 'ralewayextrabold' sans-serif;
+		text-transform: uppercase;
+		margin-bottom: 107px;
+		color: #e4e4e4;
+		text-align: center;
+		text-decoration: none;
+		line-height: 40px;
+
+    }
 }

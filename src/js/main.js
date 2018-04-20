@@ -1,17 +1,29 @@
 const App = {
+
+  
+
   init() {
     this.handlers();
   },
 
   handlers() {
-    $('body').on('click', function() { App.onClick(this); });
+   
   },
 
   onClick(el) {
-    console.log('Click', el);
+    
   }
 };
 
 $(document).ready(() => {
+  var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
   App.init();
 });
+

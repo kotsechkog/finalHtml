@@ -1,2 +1,2 @@
-"use strict";var App={init:function(){this.handlers()},handlers:function(){$("body").on("click",function(){App.onClick(this)})},onClick:function(n){console.log("Click",n)}};$(document).ready(function(){App.init()});
+"use strict";var App={init:function(){this.handlers()},handlers:function(){},onClick:function(i){}};$(document).ready(function(){new Swiper(".swiper-container",{slidesPerView:"auto",spaceBetween:30,pagination:{el:".swiper-pagination",clickable:!0}});App.init()});
 //# sourceMappingURL=main.js.map
