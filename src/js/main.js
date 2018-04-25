@@ -16,7 +16,7 @@ const App = {
       },
     });
     var swiper1 = new Swiper('.swiper-container1', {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 30,
       freeMode: true,
       pagination: {
