@@ -10,6 +10,10 @@
 @import "partials/works";
 @import "partials/facts";
 @import "partials/contact";
+@import "partials/swipers";
+@import "partials/prices";
+@import "partials/header";
+@import "partials/map";
 
 *,
 *:before,
@@ -25,6 +29,7 @@ h3 {
 
 .wrapper {
 width: 100%;
+background: #f9f9f9;
 }
 
 .top-section-icon {
@@ -45,9 +50,21 @@ width: 100%;
 		color: #fff;
 
 	}
-	&__skills {
+	&__skills,
+	&__blackquotes {
 		span {
 			transform: rotate(-45deg);
+		}
+	}
+
+	&__blackquotes {
+		background: #383838;
+		span {
+			font: 25px 'raleway' sans-serif;			    
+		    line-height: 1;
+		    position: relative;
+		    top: 4px;
+		    left: 4px;
 		}
 	}
 }
@@ -79,48 +96,5 @@ width: 100%;
 
 
 
-.header {
-	border-bottom: 2px solid #dedede;
-	padding: 30px 0;
-	margin-bottom: 80px;
-	position: sticky;
-	top: 0;
-	background: #fff;
-	z-index: 10;
-	
-	&__logo {
-		img {
-			display: block;
-		}
-	}
 
-		&__nav {
-
-			ul {
-				display: flex;
-				margin-right: -15px;
-				li {
-					margin-right: 15px;
-					a{
-						font: 13px 'ralewayextrabold' sans-serif;
-						text-transform: uppercase;
-						text-decoration: none;
-						display: block;
-						height: 40px;
-						line-height: 10px;
-						padding: 15px;
-						border-radius: 3px;
-						color: #606060;
-						&:hover {
-							background: $main_color;
-							color: #fff;
-						}
-				}
-				}
-			}
-		}
-	
-
-
-}
 

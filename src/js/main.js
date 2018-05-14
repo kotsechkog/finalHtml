@@ -30,6 +30,22 @@ const App = {
         prevEl: '.swiper-button-prev2',
       },
     });
+    var swiper3 = new Swiper('.swiper-container3', {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      breakpoints: {
+    // when window width is <= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    }
+  },
+      freeMode: true,
+      navigation: {
+        nextEl: '.swiper-button-next3',
+        prevEl: '.swiper-button-prev3',
+      },
+    });
   },
 
   onClick(el) {
