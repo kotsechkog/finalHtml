@@ -132,10 +132,12 @@
 		height: 170px;
 		background: #8a8a8a;
 		width: 100%;
+
 		&_inner {
 			max-width: 1200px;
 			padding: 0 15px;
 			height: 100%;
+			margin: 0 auto;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
