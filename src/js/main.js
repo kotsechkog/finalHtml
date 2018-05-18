@@ -7,6 +7,8 @@ const App = {
   },
 
   handlers() {
+    $('#icon-search').click( function () {
+      $('#search').toggleClass('active');});
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 'auto',
       spaceBetween: 30,
@@ -14,6 +16,7 @@ const App = {
         el: '.swiper-pagination',
         clickable: true,
       },
+
     });
     var swiper1 = new Swiper('.swiper-container1', {
       slidesPerView: 2,
