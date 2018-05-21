@@ -83,6 +83,16 @@
 		}
 
 
-
+	@media (max-width: 880px) {
+		flex-wrap: wrap;
+		.item {
+			width: 45%;
+		}
+	}
+	@media (max-width: 880px) {
+		.item {
+			width: 95%;
+		}
+	}
 	}
 }

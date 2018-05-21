@@ -25,13 +25,18 @@
 			right: 0;
 			bottom: -50px;
 			max-height: 450px;
+			@media (max-width: 985px) {
+				display: none;
+			}
 		}
 
 
 		.description {
 			width: 33%;
 			margin-top: 20px;
-			
+			@media (max-width: 985px) {
+				width: 100%;
+			}
 
 			&__item {
 				display: flex;
@@ -52,6 +57,10 @@
 			&__text {
 				min-width: 265px;
 				max-width: 265px;
+				@media (max-width: 400px) {
+					min-width: 0;
+
+				}
 				h3{
 					text-align: left;
 					text-transform: uppercase;
@@ -130,6 +139,19 @@
 			}
 
 
+		}
+		@media (max-width: 920px) {
+			.item {
+				width: 45%;
+				margin: 0 2.5% 30px 2.5%;
+			}
+		}
+		@media (max-width: 635px) {
+			.item {
+				width: 95%;
+				margin: 0 2.5% 30px 2.5%;
+
+			}
 		}
 	}
 

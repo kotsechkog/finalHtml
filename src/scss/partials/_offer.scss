@@ -40,6 +40,12 @@
 					}
 				}
 			}
+			a {
+				text-decoration: none;
+				&:hover {
+
+				}
+			}
 			.icon {
 				display: flex;
 				margin: auto;
@@ -67,6 +73,7 @@
 				font: 14px/24px 'ralewaymedium' sans-serif;
 				margin-bottom: 20px;
 				text-align: center;
+				color: #7a7a7a;
 			}
 			.link {
 				a {
@@ -89,5 +96,15 @@
 
 
 		} 
+		@media (max-width: 700px) {
+			flex-wrap: wrap;
+			.content__item {
+				width: 100%;
+				margin-bottom: 40px;
+				.text {
+					max-width: 480px;
+				}
+			}
+		}
 	}
 }

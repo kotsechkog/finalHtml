@@ -1,12 +1,18 @@
 const App = {
-
-  
-
   init() {
+    
     this.handlers();
   },
 
   handlers() {
+    $('div.swiper-container').click( function (e) {
+      App.getLike(e);
+    });
+    $('#burger').click( function (e) {
+      e.preventDefault();
+      $('#burger').toggleClass('active');
+      $('#nav').toggleClass('active');});
+
     $('#icon-search').click( function () {
       $('#search').toggleClass('active');});
     var swiper = new Swiper('.swiper-container', {
@@ -37,7 +43,6 @@ const App = {
       slidesPerView: 2,
       spaceBetween: 30,
       breakpoints: {
-    // when window width is <= 320px
     320: {
       slidesPerView: 1,
       spaceBetween: 10
@@ -50,9 +55,11 @@ const App = {
       },
     });
   },
-
-  onClick(el) {
-    
+  getLike(e) {
+    if (e.target.className == 'icon-heart') {
+      e.preventDefault();
+      e.target.nextElementSibling.textContent = +(e.target.nextElementSibling.textContent) + 1;  
+    }
   }
 };
 

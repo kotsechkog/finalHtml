@@ -88,5 +88,22 @@
 				color: $main_color;
 			}
 		}
+	@media (max-width: 460px) {
+		padding: 0 5px;
+		font-size: 24px;
+	}
+
+	}
+	@media (max-width: 430px) {
+	&__content {
+		display: flex; 
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	&__rhombus_l,
+    &__rhombus_r {
+				display: none;
+			} 
+		
 	}
 }

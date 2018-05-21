@@ -7,19 +7,26 @@
 	&__header {
 		p {
 			font: 18px 'ralewaymedium' sans-serif;	
-			text-align: center;	
-			margin-bottom: 10px;	
+			text-align: center;		
 		}
 		h1 {
 			font: 64px 'ralewayextrabold' sans-serif;
 			color: #383838;
-			line-height: 47px;
+			line-height: 55px;
 			margin: 0 0 20px 0;
+			text-align: center;
+			@media (max-width: 360px) {
+				font-size: 56px;
+			}
+			@media (max-width: 320px) {
+				font-size: 50px;
+			}
 		}
 		.slogan {
 			padding: 0 10px;
 			margin-bottom: 50px;
 			color: #fff;
+			text-align: center;
 			text-transform: uppercase;
 			font: 17px 'ralewaymedium' sans-serif;
 			display: block;

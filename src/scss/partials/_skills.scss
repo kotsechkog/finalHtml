@@ -45,5 +45,24 @@
 				text-align: center;
 			}
 		}
+		@media (max-width: 995px) {
+			flex-wrap: wrap;
+			.item {
+				width: 30%;
+			}
+
+		}
+		@media (max-width: 600px) {
+			.item {
+				width: 50%;
+				
+			}
+		}
+		@media (max-width: 360px) {
+			.item {
+				width: 100%;
+				
+			}
+		}
 	}
 }
