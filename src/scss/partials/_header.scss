@@ -18,7 +18,7 @@
 		.nav {
 			.burger {
 					position: absolute;
-					top: 20px;
+					top: 0;
 					right: 20px;
 					width: 40px;
 					height: 40px;
@@ -119,9 +119,10 @@
 			display: block;
 		}
 		&__list {
+
 			margin: 0;
 			z-index: 210;
-			position: absolute;
+			position: fixed;
 			right: -240px;
 			background: #fff;
 			width: 240px;
@@ -131,7 +132,15 @@
 			transition: all 0.3s 0.3s;
 			&.active {
 				right: 0;
-				top:  70px;
+			}
+			.icon-search {
+				display: none;
+			}
+			input[type='search'] {
+			position: static;
+			visibility: visible;
+			margin-left: 15px;
+
 			}
 		}
 	}
