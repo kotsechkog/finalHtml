@@ -1,3 +1,29 @@
+ .works .swiper-container {
+      width: 100%;
+      position: relative;
+      padding-bottom: 40px;
+    
+    .swiper-slide {
+      position: relative;
+      text-align: center;
+      font-size: 18px;
+      background: #fff;    
+      display: flex;      
+      justify-content: center;     
+      align-items: center;
+      &:hover {
+        .hover {
+          display: flex;
+        }
+        
+      }
+      
+    }
+    .swiper-pagination {
+
+    }
+    }
+
 .swiper-container2 {
 	width: 100%;
 	display: flex;
@@ -7,37 +33,9 @@
 	.swiper-slide {
 		display: flex;
 		flex-direction: column;
-		.name {
-			margin-bottom: 20px;
-			align-self: center;
-			background: #e4e4e4;
-			border-radius: 3px;
-			padding: 15px 30px;
-			font: 13px 'ralewaymedium' sans-serif; 
-			span {
-				text-transform: uppercase;
-				font: 13px 'ralewayextrabold' sans-serif;
-				color: $main_color;
-
-			}
-		}
-		.content {
-			font: 20px/34px 'ralewaymedium' sans-serif;
-			color: #e4e4e4; 
-			text-align: center;
-			margin-bottom: 100px;
-			.double-cases {
-				font: 80px 'ralewayregular' sans-serif;
-				position: relative;
-				top: 40px;
-				line-height: 0;
-			}
-		}
+		background: $main_color;
+		
 	}
-	
-	
-
-
 }
 
 .swiper-button-next2,
@@ -110,6 +108,7 @@
 .swiper-wrapper {
 	width: 100%;
 	position: relative;
+
 }
 .swiper-container3,
 .swiper-slide {
@@ -118,6 +117,11 @@
 	align-items: center;
 	justify-content: center;
 	
+}
+.swiper-container3 {
+	.swiper-slide {
+		background: #383838;
+	}
 }
 .swiper-slide {
 	.item {
@@ -128,4 +132,7 @@
 			background: #333333;
 		}
 	}
+}
+.swiper-pagination-bullet:only-child {
+		display: none;
 }

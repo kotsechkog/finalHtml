@@ -22,10 +22,10 @@ const App = {
 
     $('#scroll-top').click(function(e) {
       e.preventDefault();
-      $('#sticky-header').scrollView();
+      $('.start').scrollView();
     });
 
-
+    $('.features').parallax({imageSrc: '../img/parallax.jpg'});
 
     $('div.swiper-container').click( function (e) {
       App.getLike(e);
@@ -77,13 +77,29 @@ const App = {
 
     });
     var swiper1 = new Swiper('.swiper-container1', {
-      slidesPerView: 2,
+      slidesPerView: 4,
       spaceBetween: 30,
-      freeMode: true,
+      freeMode: false,
       pagination: {
         el: '.swiper-pagination1',
         clickable: true,
       },
+      breakpoints: {
+    1300: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true
+    },
+    1100: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      freeMode: true
+    },
+    600: {
+      slidesPerView: 1,
+      freeMode: true
+    }
+  }
     });
     var swiper2 = new Swiper('.swiper-container2', {
       navigation: {
@@ -92,12 +108,15 @@ const App = {
       },
     });
     var swiper3 = new Swiper('.swiper-container3', {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 30,
       breakpoints: {
-    320: {
-      slidesPerView: 1,
+    850: {
+      slidesPerView: 2,
       spaceBetween: 10
+    },
+    660: {
+      slidesPerView: 1
     }
   },
       freeMode: true,

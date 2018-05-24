@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?ejgtwi');
-  src:  url('../fonts/icomoon.eot?ejgtwi#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?ejgtwi') format('truetype'),
-    url('../fonts/icomoon.woff?ejgtwi') format('woff'),
-    url('../fonts/icomoon.svg?ejgtwi#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?');
+  src:  url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?') format('truetype'),
+    url('../fonts/icomoon.woff?') format('woff'),
+    url('../fonts/icomoon.svg?#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,20 +24,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-if_Sed-05_2231948:before {
-  content: "\e903";
+.icon-desctop:before {
+  content: "\e900";
+}
+.icon-like:before {
+  content: "\e901";
 }
 .icon-if_check-box-outline_326561:before {
   content: "\e902";
 }
-.icon-ic_desktop_mac_black_24px:before {
-  content: "\e900";
+.icon-picasa:before {
+  content: "\e903";
+}
+.icon-chat:before {
+  content: "\e904";
+  
+}
+.icon-pinterest:before {
+  content: "\e905";
+}
+.icon-deviantart1:before {
+  content: "\e906";
 }
 .icon-puzzle-piece:before {
-  content: "\e901";
-}
-.icon-connection:before {
-  content: "\e91b";
+  content: "\e907";
 }
 .icon-file-text:before {
   content: "\e922";
@@ -53,6 +63,9 @@
 }
 .icon-phone:before {
   content: "\e942";
+}
+.icon-envelop:before {
+  content: "\e945";
 }
 .icon-hour-glass:before {
   content: "\e979";
@@ -75,14 +88,8 @@
 .icon-heart:before {
   content: "\e9da";
 }
-.icon-play3:before {
-  content: "\ea1c";
-}
 .icon-circle-down:before {
   content: "\ea43";
-}
-.icon-mail3:before {
-  content: "\ea85";
 }
 .icon-google-plus:before {
   content: "\ea8b";
@@ -92,6 +99,9 @@
 }
 .icon-twitter:before {
   content: "\ea96";
+}
+.icon-rss:before {
+  content: "\ea9b";
 }
 .icon-youtube:before {
   content: "\ea9d";
@@ -104,6 +114,9 @@
 }
 .icon-linkedin2:before {
   content: "\eaca";
+}
+.icon-stumbleupon:before {
+  content: "\eace";
 }
 
 

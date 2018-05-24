@@ -1,6 +1,15 @@
 .footer {
 	position: relative;
-
-	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100px;
+	background: #333333;
+	p {
+		font: 14px 'ralewayextrabold' sans-serif;
+		text-align: center;
+		color: #cccccc;
+	}
+	
 }
 

@@ -1,23 +1,17 @@
 .features {
 	position: relative;
 	padding-top: 75px;
-	background: #383838;
-	display: flex;
+	background: transparent;
 	justify-content: space-between;
+	display: flex;
 	flex-flow: column no-wrap;
-
-	h3 {
-		font: 16px 'ralewaymedium' sans-serif;
-		color: #606060;
-		text-align: center;
-		margin-bottom: 50px;
-	}
 
 	&__header {
 		width: 100%;
 		display: flex;
 		position: relative;
 		overflow: hidden;
+		background: transparent;
 
 		img {
 			display: block;
@@ -32,6 +26,7 @@
 
 
 		.description {
+			background: transparent;
 			width: 33%;
 			margin-top: 20px;
 			@media (max-width: 985px) {
@@ -39,6 +34,7 @@
 			}
 
 			&__item {
+				background: transparent;
 				display: flex;
 				width: 100%;
 				margin:20px 0 50px 0;
@@ -46,6 +42,7 @@
 			}
 
 			&__icon {
+				background: transparent;
 				span {
 					display: block;
 					font-size: 40px;

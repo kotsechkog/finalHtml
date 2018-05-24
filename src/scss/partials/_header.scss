@@ -140,7 +140,11 @@
 			position: static;
 			visibility: visible;
 			margin-left: 15px;
-
+			
+			&.active {
+				transform: translateX(0);
+				transition: none;
+			}
 			}
 		}
 	}
