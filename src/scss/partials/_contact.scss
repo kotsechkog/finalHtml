@@ -84,22 +84,27 @@
 				position: relative;
 				background: $main_color;
 				padding-top: 77px;
-
+				blockquote {
+					display: flex;
+					align-items: center;
+					flex-direction: column;
+				}
 				.name {
+					display: inline-block;
 					margin-bottom: 20px;
 					align-self: center;
 					background: #e4e4e4;
 					border-radius: 3px;
 					padding: 15px 30px;
 					font: 13px 'ralewaymedium' sans-serif; 
-					span {
+					cite {
 						text-transform: uppercase;
 						font: 13px 'ralewayextrabold' sans-serif;
 						color: $main_color;
 
 					}
 				}
-				.content {
+				p {
 					font: 20px/34px 'ralewaymedium' sans-serif;
 					color: #e4e4e4; 
 					text-align: center;

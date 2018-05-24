@@ -112,10 +112,16 @@
 		}
 		@media (max-width: 850px) {
 			.form_inner {
+				display: block;
 				position: relative;
-				margin: 0 auto;
 				left: 0;
+				width: 100%;
+				margin-bottom: 75px;
+
 				transform: translateX(0);
+				form {
+					margin: 0 auto;
+				}
 
 			}
 		}
