@@ -53,11 +53,12 @@ h3 {
 			display: block;
 		}
 	}
-	&__content {
+	h2 {
 		padding: 0 10px;
 		font: 26px 'ralewayextrabold' sans-serif;
 		text-transform: uppercase;
 		white-space: nowrap;
+		
 		.first {
 			color: $main_color;
 			&_offer {
