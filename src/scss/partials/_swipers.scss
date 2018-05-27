@@ -36,6 +36,17 @@
 		background: $main_color;
 		
 	}
+	.swiper-button-next2,
+	.swiper-button-prev2 {
+		top: 80%;
+		left: 50%;
+	}
+	.swiper-button-prev2 {
+		transform: translateX(calc(-50% - 20px));
+	}
+	.swiper-button-next2 {
+		transform: translateX(calc(-50% + 20px));
+	}
 }
 
 .swiper-button-next2,
@@ -47,8 +58,8 @@
 	width: 30px;
 	height: 30px;
 	border-radius: 3px;
-	transform: translateX(-60%);
 	background: #fff;
+	cursor: pointer;
 	&:after {
 		content: '';
 		display: block;
@@ -69,14 +80,11 @@
 		}
 	}
 }
-.swiper-button-next2,
-.swiper-button-prev2 {
-	top: 80%;
-	left: 50%;
-}
+
 .swiper-button-prev3,
 .swiper-button-next3 {
 	top: 50%;
+	transform: translateX(-60%);
 	transform: translateY(-50%);
 	&:hover {
 		background: $main_color;
@@ -89,9 +97,7 @@
 .swiper-button-next3 {
 	right: 0;
 }
-.swiper-button-next2 {
-	transform: translateX(60%);
-}
+
 .swiper-button-next2,
 .swiper-button-next3 {
 		&:after {

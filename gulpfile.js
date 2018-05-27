@@ -62,7 +62,7 @@ const paths = {
       }
     },
     images: {
-      app: 'web/img'
+      app: 'web/images'
     }
   }
 };
